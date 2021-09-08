@@ -34,11 +34,12 @@ public class MyMain {
 
     // Checks whether str is a palindrome or not
     public static boolean isPalindrome(String str) {
-        String newstr = "";
+
+        String newstring = "";
         for (int i = str.length()-1; i >=0; i=i-1) {
-            String newstring = newstr + str.charAt(i);
+            newstring = newstring + str.charAt(i);
         }
-        if(newstr.equals(newstring)){
+        if(str.equals(newstring)){
             return true;
         }
         else{
